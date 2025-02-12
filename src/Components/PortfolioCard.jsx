@@ -1,6 +1,10 @@
 import React from 'react'
-import { Home, Folder, Briefcase, Key, Edit, Flame, HomeIcon, FolderCheckIcon, BriefcaseIcon, KeyIcon, Edit2, FolderArchive, PenTool, Settings, KeyRoundIcon, Wrench, Bolt } from 'lucide-react';
+import { Home, Folder, Briefcase, Key, Edit, Flame, HomeIcon, FolderCheckIcon, BriefcaseIcon, KeyIcon, Edit2, FolderArchive, PenTool, Settings, KeyRoundIcon, Wrench, Bolt, ArrowUp01, ArrowBigDownDashIcon, ArrowBigUpDashIcon, Scale } from 'lucide-react';
 import Card from './Card';
+import ProjectCard from './ProjectCard';
+import Experince from './Experince';
+import Tools from './Tools';
+
 const PortfolioCard = () => {
   return (
     <div>
@@ -76,47 +80,40 @@ const PortfolioCard = () => {
                 </div>
               </div>
 
-              
+
             </div>
             <div className="flex-1">
-            <div className="mb-12">
-              <h1 className="text-7xl font-bold mb-4">SOFTWARE</h1>
-              <h2 className="text-7xl font-bold text-gray-700 mb-8">ENGINEER</h2>
-              <p className="text-gray-400 text-xl max-w-2xl">
-                Passionate about creating intuitive and engaging user experiences.
-                Specialize in transforming ideas into beautifully crafted products.
-              </p>
-            </div>
-
-            {/* Stats */}
-            <div className="flex gap-12 mb-12">
-              <div>
-                <h3 className="text-5xl font-bold mb-2">+12</h3>
-                <p className="text-gray-500">YEARS OF<br />EXPERIENCE</p>
+              <div className="mb-12">
+                <h1 className="text-7xl font-bold mb-4">SOFTWARE</h1>
+                <h2 className="text-7xl font-bold text-gray-700 mb-8">ENGINEER</h2>
+                <p className="text-gray-400 text-xl max-w-2xl">
+                  Passionate about creating intuitive and engaging user experiences.
+                  Specialize in transforming ideas into beautifully crafted products.
+                </p>
               </div>
-              <div>
-                <h3 className="text-5xl font-bold mb-2">+46</h3>
-                <p className="text-gray-500">PROJECTS<br />COMPLETED</p>
+
+              {/* Stats */}
+              <div className="flex gap-12 mb-12">
+                <div>
+                  <h3 className="text-5xl font-bold mb-2">+12</h3>
+                  <p className="text-gray-500">YEARS OF<br />EXPERIENCE</p>
+                </div>
+                <div>
+                  <h3 className="text-5xl font-bold mb-2">+46</h3>
+                  <p className="text-gray-500">PROJECTS<br />COMPLETED</p>
+                </div>
+                <div>
+                  <h3 className="text-5xl font-bold mb-2">+20</h3>
+                  <p className="text-gray-500">WORLDWIDE<br />CLIENTS</p>
+                </div>
               </div>
-              <div>
-                <h3 className="text-5xl font-bold mb-2">+20</h3>
-                <p className="text-gray-500">WORLDWIDE<br />CLIENTS</p>
-              </div>
+
+              <Card />
+              <ProjectCard/>
+              <Experince/>
+              <Tools/>
+
             </div>
-
-            <Card />
-
-
-            <div className="mb-12">
-              <h1 className="text-7xl font-bold mb-4">RECENT</h1>
-              <h2 className="text-7xl font-bold text-gray-700 mb-8">PROJECTS</h2>
-              <p className="text-gray-400 text-xl max-w-2xl">
-                Passionate about creating intuitive and engaging user experiences.
-                Specialize in transforming ideas into beautifully crafted products.
-              </p>
-            </div>
-
-          </div>
           </div>
         </div>
 
@@ -124,7 +121,7 @@ const PortfolioCard = () => {
         {/* Made with Framer Badge */}
         <div className="fixed bottom-6 right-6">
           <div className="bg-white text-black px-4 py-2 rounded-full text-sm">
-            Made in Framer
+            Made by ❤️
           </div>
         </div>
       </div>

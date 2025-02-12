@@ -6,7 +6,7 @@ const Card = () => {
     <div>
         <div className="max-w-6xl mx-auto mt-20 mb-16 grid grid-cols-1 md:grid-cols-2 gap-6">
           <motion.div
-            className="relative overflow-hidden rounded-2xl bg-[#FF4500] p-8 cursor-pointer group"
+            className=" overflow-hidden rounded-2xl bg-[#FF4500] p-8 cursor-pointer group"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
@@ -35,7 +35,7 @@ const Card = () => {
           </motion.div>
 
           <motion.div
-            className="relative overflow-hidden rounded-2xl bg-[#B4FF4A] p-8 cursor-pointer group"
+            className=" overflow-hidden rounded-2xl bg-[#B4FF4A] p-8 cursor-pointer group"
             whileHover={{ scale: 1.02 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
